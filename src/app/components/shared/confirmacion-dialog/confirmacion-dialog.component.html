@@ -1,0 +1,10 @@
+<h1 mat-dialog-title class="firstLeterrUpperCase" style="text-align: center">{{data.accion}} {{data.nombrePopup}}</h1>
+<hr>
+<div mat-dialog-content>
+  <p style="text-align: center">¿Está seguro de {{data.accion}} {{ngObtenerArticulo()}}
+    {{data.nombrePopup}}?{{data.adicional != undefined ? data.adicional : ''}}</p>
+</div>
+<div mat-dialog-actions style="justify-content: center">
+  <button mat-button [mat-dialog-close]="opcionNo">No</button>
+  <button mat-button [mat-dialog-close]="opcionSi">Sí</button>
+</div>

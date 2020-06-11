@@ -1,0 +1,97 @@
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
+.pre-load {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.pre-load .spinner {
+  height: 30%;
+  width: 30%;
+  animation: rotate 2s linear infinite;
+  transform-origin: center center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.pre-load .spinner .path {
+  stroke-dasharray: 1, 220;
+  stroke-dashoffset: 0;
+  animation: dash 1.5s ease-in-out infinite;
+  stroke-linecap: round;
+  stroke: #ddd;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 220;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 220;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 220;
+    stroke-dashoffset: -124px;
+  }
+}
+
+.pre-load .logo {
+  width: 200px;
+  height: 100px;
+  background-size: 85%;
+}
+
+@media only screen and (max-width: 565px) {
+  .pre-load .logo {
+    background-size: 65%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .pre-load .logo {
+    background-size: 62%;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .pre-load .logo {
+    background-size: 55%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .pre-load .logo {
+    background-size: 48%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .pre-load .logo {
+    background-size: 42%;
+  }
+}
+
+@media only screen and (max-width: 270px) {
+  .pre-load .logo {
+    background-size: 30%;
+  }
+}

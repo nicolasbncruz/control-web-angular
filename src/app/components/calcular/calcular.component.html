@@ -1,0 +1,80 @@
+<div  fxLayout.lt-md="column" fxLayout="row wrap" fxLayoutGap="0px">
+  <h2 class="example-h2" style="margin-bottom:0">
+    <span>Calcula según el tipo de cambio</span>
+    <span>
+      <mat-icon color="primary" class="align-center" style="font-size:21px;" matTooltipPosition="right"
+                matTooltipClass="letraTooltip"
+                matTooltip="Ingresa el monto y las monedas para iniciar el calculo.">info_outline</mat-icon>
+    </span>
+  </h2>
+  <div  fxFlex="100" fxLayout.lt-md="column" fxLayout="row wrap">
+
+    <form [formGroup]="formGestionarSerie" id="gestionarCalcular">
+      <div class="flexCol animated fadeIn " fxFlex="100" fxLayout="row wrap">
+        <input matInput formControlName="id" style="display: none;">
+        <div class="flexCol animated fadeIn" fxFlex="50">
+
+          <mat-card>
+            <div ng class="contenedorTabsIniciales">
+              <div>
+                <div ng fxFlex.lt-xl="100" class="contenedorTabsIniciales" fxLayout="row wrap">
+                  <h4 style="margin-top: 5px!important" class="text-uppercase">calculadora</h4>
+                  <div fxFlex="100" fxLayout="row wrap" fxLayoutAlign="center center">
+                    <div fxFlex="100" class="padding-5" fxLayoutAlign="center center">
+                      <label class="font-bold margin-sides-10">Monto Ingresado: </label>
+                      <mat-form-field class="example-full-width">
+                        <input matInput required placeholder="monto" formControlName="monto" maxlength="10"
+                               oninput="this.value = this.value.toUpperCase()" (input)="esRegistroSerie = true" (keyup)="ngObtenerMonto($event.target.value)">
+                      </mat-form-field>
+                      <label>-</label>
+
+                      <mat-form-field class="example-full-width margin-sides-10">
+                        <mat-select placeholder="Moneda Origen" formControlName="monedaOrigen" (change)="ngDefinirMonedaOrigen()" >
+                          <mat-option value="-1">Seleccione</mat-option>
+                          <mat-option *ngFor="let tipoMoneda of listaTiposMoneda" [value]="tipoMoneda.valor">
+                            {{tipoMoneda.descripcion}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+
+                      <mat-icon color="primary" style="cursor: pointer; font-size: 15px; padding-bottom: 10px" matTooltipClass="letraTooltip"
+                                matTooltip="Seleccione la moneda de origen">info
+                      </mat-icon>
+                    </div>
+
+
+                    <div fxFlex="100" class="padding-5" fxLayoutAlign="center center">
+                      <label class="font-bold margin-sides-10">Monto Equivalente: </label>
+                      <mat-form-field class="example-full-width">
+                        <input matInput required placeholder="monto" formControlName="montoConTipoCambio" maxlength="10"
+                               oninput="this.value = this.value.toUpperCase()" input="false">
+                      </mat-form-field>
+                      <label>-</label>
+                      <mat-form-field class="example-full-width margin-sides-10">
+                        <mat-select placeholder="Moneda Destino" formControlName="monedaDestino" (change)="ngDefinirMonedaDestino()" >
+                          <!--<mat-option value="-1">Seleccione</mat-option>-->
+                          <mat-option *ngFor="let tipoMoneda of listaTiposMoneda" [value]="tipoMoneda.valor">
+                            {{tipoMoneda.descripcion}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+
+                      <mat-icon color="primary" style="cursor: pointer; font-size: 15px; padding-bottom: 10px" matTooltipClass="letraTooltip"
+                                matTooltip="Seleccione la moneda de destino">info
+                      </mat-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+
+
+        <div fxFlex="100" fxLayoutAlign="end center">
+          <button mat-button type="button" color="primary" (click)="ngRegresar()">Definir Tipo de Cambio</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

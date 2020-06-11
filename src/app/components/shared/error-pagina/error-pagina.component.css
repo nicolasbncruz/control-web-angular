@@ -1,0 +1,24 @@
+body{
+  margin: 0px;
+  font-family: Roboto,Arial,sans-serif !important;
+  font-size: 0.9em;
+  color:#29303b;
+	background-color: #F5F5F5 !important;
+}
+
+.title-error{
+		color: #4C9C2E;
+		margin: 0 10px;
+		font-size: 72px;
+		text-align: center;
+}
+
+h3 span {color: #4C9C2E;font-size: 72px;}
+
+p {font-size: 14px;margin: 1em 0; text-align:center;}
+
+p span{font-size: 12px;font-family: Courier !important;}
+
+.error-container{
+	padding: 30px 30px 30px 30px;
+}

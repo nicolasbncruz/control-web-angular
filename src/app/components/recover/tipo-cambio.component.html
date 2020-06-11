@@ -1,0 +1,55 @@
+<div  fxLayout.lt-md="column" fxLayout="row wrap" fxLayoutGap="0px">
+  <div  fxFlex="100" fxLayout.lt-md="column" fxLayout="row wrap">
+
+    <form [formGroup]="formGestionarSerie" id="gestionarSerie">
+      <div class="flexCol animated fadeIn " fxFlex="100" fxLayout="row wrap">
+        <input matInput formControlName="id" style="display: none;">
+        <div class="flexCol animated fadeIn" fxFlex="50">
+          <input matInput [hidden]="true"  formControlName="idDolares" >
+          <input matInput [hidden]="true"  formControlName="idEuros" >
+
+          <mat-card>
+            <div ng class="contenedorTabsIniciales">
+              <div>
+                <div ng fxFlex.lt-xl="100" class="contenedorTabsIniciales" fxLayout="row wrap">
+                  <h4 style="margin-top: 5px!important" class="text-uppercase">Ingrese el Tipo de Cambio</h4>
+                  <div fxFlex="100" fxLayout="row wrap" fxLayoutAlign="center center">
+
+                    <div fxFlex="100" class="padding-5" fxLayoutAlign="center center">
+                      <label class="font-bold margin-sides-10">Dólares: </label>
+                      <label class="font-bold margin-sides-5">$</label>
+                      <mat-form-field class="example-full-width">
+                        <input matInput required placeholder="ingrese valor" formControlName="tipoCambioDolares" maxlength="10"
+                               oninput="this.value = this.value.toUpperCase()" (input)="esRegistroSerie = true">
+                      </mat-form-field>
+                    </div>
+                    <div fxFlex="100" class="padding-5" fxLayoutAlign="center center">
+                      <label class="font-bold margin-sides-10">Euros: </label>
+                      <label class="font-bold margin-sides-5">€</label>
+                      <mat-form-field class="example-full-width">
+                        <input matInput required placeholder="ingrese valor" formControlName="tipoCambioEuros" maxlength="10"
+                               oninput="this.value = this.value.toUpperCase()" (input)="esRegistroSerie = true">
+                      </mat-form-field>
+
+                    </div>
+                    <hr><hr><hr>
+                    <div fxFlex="100" fxLayoutAlign="end center">
+                      <button mat-button type="button" (click)="ngRegresar()">Regresar</button>
+                      <button mat-raised-button color="primary" class="margin-sides-10" (click)="ngGuardarSeries()"
+                              [disabled]="formGestionarSerie.invalid || (!esRegistroSerie && !esRegistroCorrelativo)">Guardar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </mat-card>
+
+        </div>
+
+      </div>
+
+    </form>
+  </div>
+</div>

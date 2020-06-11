@@ -1,0 +1,6 @@
+{
+  "project": "Update Control",
+  "version": "v 1.0.0",
+  "timeOutSesion": "timeOutSesionValue",
+  "contadorTimeOut": "contadorTimeOutValue"
+}

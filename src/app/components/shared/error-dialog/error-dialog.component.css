@@ -1,0 +1,12 @@
+.icon-upload-xml{font-size:3.5em; width: 3.5em!important; height:36px; }
+
+::ng-deep .mat-dialog-container {
+  border-radius: 8px !important;
+  /*border: 2px solid #282056;*/
+}
+
+/*.hr-color {*/
+  /*border-color: #282056;*/
+  /*color: #282056;*/
+  /*background: #282056;*/
+/*}*/

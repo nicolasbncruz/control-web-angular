@@ -1,0 +1,8 @@
+<!-- INACTIVIDAD -->
+<section *ngIf="rutasPermitidasActivas() && showIdle" class="padding-sides-20 idleText">
+  <p class="padding-5 align-right margin-0">
+    {{idleState}}
+  </p>
+</section>
+<!--The content below is only a placeholder and can be replaced.-->
+<router-outlet></router-outlet>

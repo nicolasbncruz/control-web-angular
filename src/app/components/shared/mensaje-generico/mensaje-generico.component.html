@@ -1,0 +1,9 @@
+<div  fxLayout.lt-md="column" fxLayout="row wrap" fxLayoutGap="0px">
+  <div fxFlex=100 fxLayoutAlign="center center">
+    <i style="font-size:4em;" [ngStyle]="{'color':data.color}" class="material-icons">{{data.icon}}</i>
+  </div>
+  <div fxFlex=100 >
+    <h3 class="align-center">{{data.titulo}} </h3>
+    <div [innerHtml]="data.mensaje"></div>
+  </div>
+</div>

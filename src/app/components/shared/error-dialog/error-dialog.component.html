@@ -1,0 +1,12 @@
+<h1 mat-dialog-title class="font-bold">{{data.titulo}}</h1>
+<hr>
+<div mat-dialog-content fxLayoutAlign="center center">
+  <ul>
+    <li *ngFor="let error of errores; trackBy: trackByError">
+      <span >{{error}}</span>
+    </li>
+  </ul>
+</div>
+<div mat-dialog-actions align="center">
+  <button mat-button mat-dialog-close cdkFocusInitial>Aceptar</button>
+</div>
