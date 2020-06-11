@@ -1,4 +1,12 @@
 {
-
-  
+  "type": "service_account",
+  "project_id": "pe-tci-cld-01",
+  "private_key_id": "fc5e9b6d7fb5cf57faca16962a9b210f1c77b1a1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCuoQB4QVYYFyCX\n0CXwymZI31KazppZbICn1fZAO7udX68jhQ2ueKCBZd6zmb2Y/wPvw3WVi6Z//YhQ\nsmgxaheXor8bHk1ANzdrGA6lfYODG0R6NnYTjbm4AzgrNBYD9dn3x6W0Dz6GbJbT\n82Jm5RrR+EhE+2vqwELZGeGu5HWdoCcXIbs2pFU2xUBc7SYAP7BfdEecSK2GWxDl\nOej77KY1I5l1TbzXJfHrhlnqw3n8rDvhR0U8fiGQ0HBoqteU9HaE2NfTXz4Ulw5q\nNYUQ3hv7uiSm2HW/PQhNi3OFEpPd5ShZii/VmMM1meILZRji+6K3ahGLlzKMTO9M\nVetPWTBpAgMBAAECggEAHnfb1596sIBUgPhhrkX6G6vPQ1BZ0NFkDyR/Lwzc+qPH\nsHhV/0NvqbQG66oe0PNpkes1+E4h0kH/hyjhkgGTNTNBia87RkF8C1TqtUgVaooW\n5AXdiyLWrPru0Wbokm9SRO+SAz0HqTeIB1n3KMG/cLQTk+mUFiTOZQelfzjAJqyR\nQRUZMK0Sdqv1K983OJLO17JjJMoFv5QhUlGdd7bdGXbIiTeYj3LaxMLM6g4jd4LP\nGqL/Kms98Rbx0tD/GvMxl6kk49/U9KUePuDTX8Qr5gUzwAyYWnMlz0xO1rKmguSA\nDnyjWbt6kKkMoi8BdR94oZGgULZDlfttcq5r+6hvMwKBgQDib+SWWLg3DBKbsPKa\nj/UxVaRpxMWy8XOXf+3BxJCoenIxNgBfMFxLbt/QW71F9v1hEO78q39v2Ve49xck\nYebD+qn2eSuit/z+PIBCF7oZ6/kOXFeGkSB2WRoIh11adiUNZEbGf81jJew8xjOp\nC1kdlii+pb8S4a3/HoIhh3DQfwKBgQDFbYwaDBHzelXHnNi/UTccGpv8LJVyyzic\nqJZRyqUmO9Ty4yjsKe34e1baaAie48rCYM28w5Vh4isy4E2AwnSjZbUHxTlrpDK+\nRU3G31CLymSMwOh4uN/yoQ4LRPWNdiVYwvDp9ZWMAav7ddnlJ5L87eP0pXbzkSo6\npstvBD8LFwKBgQCrzTGmUNIUEfjcX7jyRF9Iey4vgbhuOHv3any+E6Gd8qlJZSuL\nDWo5YXo24CQPPYKpbuukkYozFrhUAkVwuUcZUso5012kK+ysCMNXYiE1IbDpkG5o\nDxyOLrRt3CacSB98taRtXvI6U7+VrNvtWkrXA+MOIzuB2/DkLAWX4udZiQKBgAXm\nw2RX7gVwJ7ZCyvvVCqetZ/I+xuzahEOyimPBgfRFn5TvE18T1cgyr6LxryhIuNvc\nlunIkuONJitsJwTtSx1DQgkMbS35h4bGfY+vRzIWh7DpZ0mMhS00gT32/rwOxwkD\nMr5bl+/KcQCgQjYmW69x0PmUJJ0dPrzoFXapEtVbAoGAczrBALHyK3E/9ZkgMogu\nXoyJlOWLFk6ZBlvvCqDaVDd4dVWEU1E9SQO2gjUVPFAXdis/zRPMXeF333zM7Wxf\nCOAQCqlLqpL+hVqx8L0NOmEqBILWhLk1D7EZmtW50ks08AXwwIq3qv0filJmUq0N\nCZdG2P5Aua/zmQ5ZE+Md6EM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "tci-epos-update-control-deploy@pe-tci-cld-01.iam.gserviceaccount.com",
+  "client_id": "105002695804856870478",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tci-epos-update-control-deploy%40pe-tci-cld-01.iam.gserviceaccount.com"
 }
